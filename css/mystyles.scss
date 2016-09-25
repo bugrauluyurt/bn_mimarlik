@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+$font-openSans:'Open Sans', sans-serif;
+
+div.home-sub-b, {
+	font-family: $font-openSans;
+}
+
+p,
+h1,
+.home-link span,
+.home-sub-b,
+.menu-left ul li a,
+.section-projects .list-b li,
+.section-about ul li a,
+.section-projects .projects-list a,
+{
+	font-family: $font-openSans;
+	font-weight:200;
+}
+
+img.logo-img {
+	margin-top:-10px;
+	margin-bottom:-10px;
+}
+
+div.home-sub-a
+{
+	margin-right:-16px;
+}
+
+div.home-sub-b
+{
+	margin-right:-8px;
+}
+
+.loader-name {
+	font-size:12px;
+	line-height:100px;
+	font-weight:300;
+}
+
+.loader-frame {
+	border:none;
+	background-image:none;
+}
+
+.menu-sub {
+	font-family: $font-openSans;
+}
+
+p.team-profession {
+	font-weight:200;
+}
+
+.section-services {
+	h2 {
+		a {
+			text-decoration: none;
+			color:#474444;
+			line-height: 1.5;
+			font-family: $font-openSans;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+	.projects-section-custom {
+		width: 80%;
+	}
+	.section-projects .projects-list a {
+		font-size:12px !important;
+	}
+	.section-projects .list-a ul li {
+		margin:5px 0 5px 15px;
+	}
+}

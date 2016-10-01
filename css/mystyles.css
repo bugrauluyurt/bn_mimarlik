@@ -13,6 +13,26 @@ h1,
   font-family: "Open Sans", sans-serif;
   font-weight: 200; }
 
+.button {
+  padding: 10px 20px;
+  background-color: #FEECB3;
+  color: #474444;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  font-size: 14px;
+  transition: all 200ms linear;
+  -webkit-transition: all 200ms linear; }
+  .button:hover {
+    background-color: #fff4d3;
+    text-decoration: none;
+    color: #474444; }
+
+#services-carousel {
+  margin-bottom: 25px; }
+
+.projects-list ul {
+  padding-bottom: 10px; }
+
 img.logo-img {
   margin-top: -10px;
   margin-bottom: -10px; }
@@ -21,7 +41,11 @@ div.home-sub-a {
   margin-right: -16px; }
 
 div.home-sub-b {
-  margin-right: -8px; }
+  margin-right: -53px;
+  margin-top: 10px; }
+
+.home-name {
+  margin: 0 auto 20px; }
 
 .loader-name {
   font-size: 12px;
@@ -38,6 +62,26 @@ div.home-sub-b {
 p.team-profession {
   font-weight: 200; }
 
+.menu-left ul li:nth-child(3) {
+  margin-bottom: 10px; }
+
+.menu-left ul li.small-anchor {
+  position: relative;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  padding-left: 20px; }
+  .menu-left ul li.small-anchor a {
+    transition: 200ms color; }
+  .menu-left ul li.small-anchor a:hover i {
+    color: #F8CB42; }
+  .menu-left ul li.small-anchor a i {
+    position: absolute;
+    top: 3px;
+    left: 0px; }
+
+.menu-left ul li.small-anchor a {
+  font-size: 12px; }
+
 .section-services h2 a {
   text-decoration: none;
   color: #474444;
@@ -46,6 +90,34 @@ p.team-profession {
   .section-services h2 a:hover {
     opacity: 0.8; }
 
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+  .logo-img {
+    height: 50px; }
+
+  .section-home .section-margin {
+    padding-top: 10px;
+    padding-left: 30px !important;
+    padding-bottom: 40px !important; }
+
+  div.home-sub-b {
+    margin-right: -32px; } }
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */ }
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */ }
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */ }
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */ }
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */ }
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   /* Styles */
@@ -56,6 +128,15 @@ p.team-profession {
     font-size: 12px !important; }
 
   .section-projects .list-a ul li {
-    margin: 5px 0 5px 15px; } }
+    margin: 5px 0 5px 15px; }
+
+  .mobile-logo {
+    display: none !important; } }
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */ }
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */ }
 
 /*# sourceMappingURL=mystyles.css.map */

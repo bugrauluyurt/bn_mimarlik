@@ -1,10 +1,3 @@
-/*
-Theme Name: ARD
-Description: Architecture Template
-Author: Rafava
-Version: 1.2
-*/
-
 /* ==================================================================
 
  * Table of Contents:
@@ -51,7 +44,7 @@ $(document).ready(function() {
     //MULTISCROLL
     $('#main-container').multiscroll({
         sectionsColor: ['white','white','white','white','white','white'],
-        anchors: ['first','second','third','fourth','fifth','sixth'],
+        anchors: ['first','second','third','fourth','fifth','sixth','seventh'],
         easing:'easeInOutCubic',
         menu:'.menu-left',
         scrollingSpeed: 1000,
@@ -85,12 +78,16 @@ $(document).ready(function() {
             $("#right4").insertAfter("#right3");
             $("#right5").insertAfter("#right4");
             $("#right6").insertAfter("#right5");
+            $("#right7").insertAfter("#right6");
+            $("#right8").insertAfter("#right7");
         } else {
             $("#right2").insertBefore("#right1");
             $("#right3").insertBefore("#right2");
             $("#right4").insertBefore("#right3");
             $("#right5").insertBefore("#right4");
             $("#right6").insertBefore("#right5");
+            $("#right7").insertBefore("#right6");
+            $("#right8").insertBefore("#right7");
         }
     }
     reverseSection();
@@ -212,7 +209,7 @@ $(document).ready(function() {
         if (index == 4){
             $("#left4").vegas({
                 slides: [
-                  { src: "./img/background-left-yarismalar.jpg" },
+                  { src: "./img/background-left-mimari-projeler.jpg" },
                 ],
                 delay: 7000,
                 cover:false,
@@ -222,7 +219,7 @@ $(document).ready(function() {
             });
             $("#right4").vegas({
                 slides: [
-                { src: "./img/background-right-yarismalar.jpg" },
+                { src: "./img/background-right-mimari-projeler.jpg" },
                 ],
                 delay: 7000,
                 cover:false,
@@ -235,7 +232,7 @@ $(document).ready(function() {
         if (index == 5){
             $("#left5").vegas({
                 slides: [
-                  { src: "./img/background-left-yarismalar.jpg" },
+                  { src: "./img/background-left-peyzaj-projeleri.jpg" },
                 ],
                 delay: 7000,
                 cover:false,
@@ -245,7 +242,7 @@ $(document).ready(function() {
             });
             $("#right5").vegas({
                 slides: [
-                { src: "./img/background-right-yarismalar.jpg" },
+                { src: "./img/background-right-peyzaj-projeleri.jpg" },
                 ],
                 delay: 7000,
                 cover:false,
@@ -301,6 +298,9 @@ $(document).ready(function() {
             });
         }
     }
+
+    //FANCYBOX
+    $(".fancybox").fancybox();
 
     //FADE IN-OUT PROJECTS SECTIONS
     $('.projects-link-1').on("click", function(e) {

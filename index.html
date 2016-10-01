@@ -58,7 +58,8 @@
                 </ul>
             </div>
             <div class="menu-name">
-                <img src="img/logo.png" alt="" width="68" height="40">
+                <img src="img/logo_long2.png" alt="" height="40">
+                <!-- <img src="img/logo.png" alt="" width="68" height="40"> -->
             </div>
             <div class="menu-sub">MİMARLIK</div>
         </nav><!-- END MENU-LEFT -->
@@ -107,7 +108,9 @@
             <div class="ms-section hide-mobile" id="left6"></div><!-- END LEFT 6 -->
 
             <!-- LEFT 7 -->
-            <div class="ms-section hide-mobile" id="left7"></div><!-- END LEFT 7 -->
+            <div class="ms-section hide-mobile" id="left7" style="position:relative">
+              <div id="map_div" class="google-maps-section hide-mobile"></div>
+            </div><!-- END LEFT 7 -->
 
         </div><!-- END MS-LEFT -->
 
@@ -300,13 +303,56 @@
                             <div class="section-two p-h1 display-none">
                                 <div class="border"></div>
                                 <h1>Filitoğlu İnşaat AVM ve Konut Projesi</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium laborum excepturi quasi suscipit, perspiciatis eligendi sit nesciunt provident quaerat cupiditate maiores pariatur iure eaque.</p>
-                                <div class="projects-list list-b">
+                                <div id="design-carousel">
+                                    <div class="design-item design-height">
+                                        <a class="design-popup-link mfp-fade" href="img/projeler/filitoglu/filitoglu_towers_01.jpg">
+                                            <div class="design-overlay"></div>
+                                            <div class="design-img" style="background-image: url(img/projeler/filitoglu/filitoglu_towers_01_small.jpg)"></div>
+                                        </a>
+                                    </div>
+                                    <div class="design-item design-height">
+                                        <a class="design-popup-link mfp-fade" href="img/projeler/filitoglu/filitoglu_towers_02.jpg">
+                                            <div class="design-overlay"></div>
+                                            <div class="design-img" style="background-image: url(img/projeler/filitoglu/filitoglu_towers_02_small.jpg)"></div>
+                                        </a>
+                                    </div>
+                                    <div class="design-item design-height">
+                                        <a class="design-popup-link mfp-fade" href="img/projeler/filitoglu/filitoglu_towers_03.jpg">
+                                            <div class="design-overlay"></div>
+                                            <div class="design-img" style="background-image: url(img/projeler/filitoglu/filitoglu_towers_03_small.jpg)"></div>
+                                        </a>
+                                    </div>
+                                    <div class="design-item design-height">
+                                        <a class="design-popup-link mfp-fade" href="img/projeler/filitoglu/filitoglu_towers_04.jpg">
+                                            <div class="design-overlay"></div>
+                                            <div class="design-img" style="background-image: url(img/projeler/filitoglu/filitoglu_towers_04_small.jpg)"></div>
+                                        </a>
+                                    </div>
+                                    <div class="design-item design-height">
+                                        <a class="design-popup-link mfp-fade" href="img/projeler/filitoglu/filitoglu_towers_05.jpg">
+                                            <div class="design-overlay"></div>
+                                            <div class="design-img" style="background-image: url(img/projeler/filitoglu/filitoglu_towers_05_small.jpg)"></div>
+                                        </a>
+                                    </div>
+                                    <div class="design-item design-height">
+                                        <a class="design-popup-link mfp-fade" href="img/projeler/filitoglu/filitoglu_towers_06.jpg">
+                                            <div class="design-overlay"></div>
+                                            <div class="design-img" style="background-image: url(img/projeler/filitoglu/filitoglu_towers_06_small.jpg)"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <nav class="navigation navigation-project-img">
+                                    <ul>
+                                        <li class="prev"> <a class="prev-slide ion-arrow-left-c"></a></li>
+                                        <li class="next"><a class="next-slide ion-arrow-right-c"></a></li>
+                                    </ul>
+                                </nav>
+                                <div class="projects-list list-b mt-15">
                                     <ul>
                                         <li><span>Tasarım takımı </span>: Nihan Özdöver , Burak Özdöver</li>
                                         <li><span>Proje Ortakları </span>: N/A</li>
                                         <li><span>Müşteri </span>: Filitoğlu İnşaat</li>
-                                        <li><span>Detaylar </span>: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nisi, iusto amet dignissimos expedita alias libero temporibus earum? Mollitia dolor illum.</li>
+                                        <li><span>Detaylar </span>: Türkiye, Hatay Dörtyol, 38.000 m<sup>2</sup> - 2013</li>
                                     </ul>
                                 </div>
                                 <a class="button" target="_blank" href="http://www.stealth.ultd.net/stealth/projects/05_smart.architecture/download/smartarch_ebook.pdf">BN Tasarım Tanıtım Dosyası</a>
@@ -363,7 +409,7 @@
                 <div class="section-projects section">
                     <div class="center">
                         <div class="col-md-7 section-margin projects-section-custom">
-                            <div class="section-one">
+                            <div class="section-one-half">
                                 <div class="border"></div>
                                 <h1><small>peyzaj projeleri</small></h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium laborum excepturi quasi suscipit, perspiciatis eligendi sit nesciunt provident quaerat cupiditate maiores pariatur iure eaque.</p>
@@ -497,11 +543,11 @@
                                     </div>
                                     <div class="col-xs-12 col-md-12 form-group">
                                         <button class="contact-button" type="submit">Gönder</button>
-                                        <a class="map-popup-link mfp-fade map" href="#map-popup">Ofisimiz nedere? Harita üzerinde gör</a>
+                                        <a class="map-popup-link mfp-fade map hide-desktop" href="#map-popup">Ofisimiz nedere? Harita üzerinde gör</a>
                                     </div>
                                 </form>
                                 <div id="success"></div>
-                                <div id="map-popup" class="contact-popup-options mfp-hide">
+                                <div id="map-popup" class="contact-popup-options mfp-hide hide-desktop">
                                    <div id="map_div"></div>
                                 </div>
                             </div>

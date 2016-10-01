@@ -26,6 +26,11 @@
 $(document).ready(function() {
     "use strict";
 
+    //LANG-WINDOW-HEIGHT
+    var docHeight = $(window).height();
+    console.log(docHeight);
+    $(".lang-wrapper").css("height",docHeight);
+
     //MENU FEATURES
     function homeheightmenu() {
         $(".home-link").css({
@@ -278,7 +283,7 @@ $(document).ready(function() {
         if (index == 7){
             $("#left7").vegas({
                 slides: [
-                  { src: "./img/background-left-iletisim.jpg" },
+                  { src: "" },
                 ],
                 delay: 7000,
                 cover:false,
@@ -288,7 +293,7 @@ $(document).ready(function() {
             });
             $("#right7").vegas({
                 slides: [
-                { src: "./img/background-right-iletisim.jpg" },
+                { src: "" },
                 ],
                 delay: 7000,
                 cover:false,
@@ -450,18 +455,18 @@ $(document).ready(function() {
 
     //GOOGLE MAP
     function initializeGoogleMap() {
-        var styles = [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#ff0000"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"lightness":"100"}]},{"featureType":"landscape.man_made","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"lightness":"100"}]},{"featureType":"landscape.natural","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"lightness":"100"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry.fill","stylers":[{"visibility":"off"},{"lightness":"23"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#EBD9A0"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#EBD9A0"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#cccccc"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]}];
+        var styles = [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}];
         var styledMap = new google.maps.StyledMapType(styles,
         {name:"Styled Map"});
-        var myLatlng = new google.maps.LatLng(48.8588589,2.3475569);
+        var myLatlng = new google.maps.LatLng(39.898371, 32.873294);
         var myOptions = {
         center: myLatlng,
         zoom: 14,
         scrollwheel: false,
-        navigationControl: false,
-        mapTypeControl: false,
+        navigationControl: true,
+        mapTypeControl: true,
         scaleControl: false,
-        disableDefaultUI: true
+        disableDefaultUI: false
         };
         var map = new google.maps.Map(document.getElementById("map_div"), myOptions);
         var marker = new google.maps.Marker({
